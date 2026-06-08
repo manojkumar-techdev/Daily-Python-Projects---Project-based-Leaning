@@ -1,6 +1,8 @@
+# imported modules
 import time
 import sys
 
+# function for user choices
 def userChoice(choice):
     if choice == "1":
         digital_clock()
@@ -10,6 +12,7 @@ def userChoice(choice):
     else:
         print("Invalid choice!")
 
+# function for digital clock
 def digital_clock():
     """Displays a digital clock."""
     while True:
@@ -17,7 +20,7 @@ def digital_clock():
         print("\rDigital Clock: " + current_time, end = '')
         time.sleep(1)
     
-# Update the function below this line
+# function for countdown times
 def countdown_timer(seconds):
     """Counts down from a given number of seconds."""
     while seconds > 0:
